@@ -1,6 +1,6 @@
 import * as express from "express";
 import produtoFactory from "./produto.factory";
-import { sum } from "../../libs/sum";
+import { ultimoValor } from "../../libs/tratamentos";
 
 const router = express.Router();
 
@@ -14,8 +14,8 @@ router.post("/", async (req, res) => {
   return res.status(200).json({ data });
 });
 
-router.post("/sum", async (req, res) => {
-  const response = sum(req.body.a, req.body.b);
+router.post("/ultimo-valor", async (req, res) => {
+  const response = ultimoValor(req.body);
   return res.status(200).json(response);
 });
 
