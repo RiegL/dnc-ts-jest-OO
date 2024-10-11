@@ -5,7 +5,7 @@ export default {
     port: 3306,
     user: 'leo', // alterar aqui
     password: 'hasarbrasil',// alterar aqui
-    database: 'automacao',// alterar aqui
+    database: 'testesintegracao',// alterar aqui
   },
 };
 // aleterar aqui

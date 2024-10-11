@@ -5,7 +5,7 @@ import {
 } from "../__mocks__/tratamentos.mock";
 import { descobrirNomes } from "../nomes";
 
-describe.skip("nomes suite", () => {
+describe("nomes suite", () => {
   it("deve retornar o ultimo nome de cada lista", () => {
     expect(
       descobrirNomes([listaMocks, listaMocksHomem, listaMocksMulher])
